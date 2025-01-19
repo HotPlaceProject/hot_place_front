@@ -1,23 +1,27 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import MainLeft from './views/RecommnedView.vue'
+import MainMap from './components/MainMap.vue'
+import FloatingActionBtn from './components/FloatinActionBtn.vue'
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Top Places</RouterLink>
+        <RouterLink to="/recommend">Recommend</RouterLink>
       </nav>
+      <!-- <MainLeft msg="Main Left!" /> -->
+      <MainMap msg="Main Map!" />
+      <!-- <MainRight msg="Main Right!" /> -->
     </div>
   </header>
 
   <RouterView />
+  <FloatingActionBtn />
 </template>
 
 <style scoped>
@@ -81,5 +85,4 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
-</style>
+}</style>

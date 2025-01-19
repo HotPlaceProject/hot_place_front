@@ -32,7 +32,7 @@
 }
 .map {
   position: relative;
-  width: 800px;
+  width: 50vw;
   height: 600px;
   margin: 0 auto;
   background-color: #f0e5d8;
