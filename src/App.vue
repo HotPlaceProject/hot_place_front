@@ -3,24 +3,27 @@ import { RouterLink, RouterView } from 'vue-router'
 // import MainLeft from './views/RecommnedView.vue'
 import MainMap from './components/MainMap.vue'
 import FloatingActionBtn from './components/FloatinActionBtn.vue'
-
+import TestMap from './components/TestMap.vue'
 </script>
 
 <template>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Top Places</RouterLink>
-        <RouterLink to="/recommend">Recommend</RouterLink>
-      </nav>
       <!-- <MainLeft msg="Main Left!" /> -->
-      <MainMap msg="Main Map!" />
+      <!-- <MainMap msg="Main Map!" /> -->
+      <TestMap />
       <!-- <MainRight msg="Main Right!" /> -->
     </div>
   </header>
-
-  <RouterView />
+  <div>
+    <nav>
+        <RouterLink to="/">Top Places</RouterLink>
+        <RouterLink to="/recommend">Recommend</RouterLink>
+      </nav>
+    <RouterView />
+  </div>
+  
   <FloatingActionBtn />
 </template>
 
@@ -30,10 +33,10 @@ header {
   max-height: 100vh;
 }
 
-.logo {
+/* .logo {
   display: block;
   margin: 0 auto 2rem;
-}
+} */
 
 nav {
   width: 100%;

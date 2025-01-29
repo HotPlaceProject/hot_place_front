@@ -62,10 +62,6 @@ const recentIncreasedPlaces = [
 </script>
 
 <template>
-  <div>
-    <!-- todo: 여기로 nav bar 옮겨주셈 -->
-  </div>
-
   <div class="top-place-container">
     <div class="section">
       <h2>{{ sectionTitles.crowded }}</h2>
